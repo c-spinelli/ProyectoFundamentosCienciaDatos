@@ -7855,7 +7855,60 @@ max             8.000000           6.000000   101.000000
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=67f01c83-d399-48fc-b41c-1c237577bb3e">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=67f01c83-d399-48fc-b41c-1c237577bb3e">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [17]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">data_description_cat</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">(</span><span class="n">exclude</span><span class="o">=</span><span class="p">[</span><span class="s1">'number'</span><span class="p">])</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Descripción estadística de los datos cualitativos:"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">data_description_cat</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>
+Descripción estadística de los datos cualitativos:
+       Parental_Involvement Access_to_Resources Extracurricular_Activities  \
+count                  6607                6607                       6607   
+unique                    3                   3                          2   
+top                  Medium              Medium                        Yes   
+freq                   3362                3319                       3938   
+
+       Motivation_Level Internet_Access Family_Income Teacher_Quality  \
+count              6607            6607          6607            6529   
+unique                3               2             3               3   
+top              Medium             Yes           Low          Medium   
+freq               3351            6108          2672            3925   
+
+       School_Type Peer_Influence Learning_Disabilities  \
+count         6607           6607                  6607   
+unique           2              3                     2   
+top         Public       Positive                    No   
+freq          4598           2638                  5912   
+
+       Parental_Education_Level Distance_from_Home Gender  
+count                      6517               6540   6607  
+unique                        3                  3      2  
+top                 High School               Near   Male  
+freq                       3223               3884   3814  
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=8b6cf986-543b-44d9-b4c4-73d7bf7e33c7">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
